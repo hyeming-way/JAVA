@@ -9,17 +9,23 @@
 15     
      
      [주의] 문자열로 변환하지 말고 숫자로만 처리 해야 한다.
-     [힌트] 숫자의 마지막 자리를 어떻게 뽑아내는지만 알아내면 나머는 쉽게 해결된다.
+     [힌트] 숫자의 마지막 자리를 어떻게 뽑아내는지만 알아내면 나머지는 쉽게 해결된다.
 */
 public class test4 {
 	public static void main(String[] args) {
 		int num = 12345;
 		int sum = 0;
 		
-		//(1)
+		while(num>=1) {
+			
+			sum += num%10;
+			
+			num = num/10;
+
+		}
 		
 		System.out.println("sum="+sum);
-		
+
 	}
 
 }
