@@ -1,5 +1,4 @@
 
-
 /*
  문제. 아래의 다중 for문을 while문으로 변경 하시오.
 
@@ -46,12 +45,7 @@ public class test2 {
 			System.out.println();
 			i++;
 			
-		}
-		
-		
-	
-		
-		
+		}	
 		
 	}//main메소드 닫기
 
