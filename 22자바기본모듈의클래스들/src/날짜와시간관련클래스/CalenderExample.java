@@ -59,10 +59,37 @@ public class CalenderExample {
 
 			default://일요일이면?
 									 strWeek = "일";
-			
+		}
+  		
+  		//현재 오전 또는 오후를 리턴
+  		int amPm = now.get(Calendar.AM_PM);
+  
+  		String strAmPm = null;
+  		
+		if(amPm == Calendar.AM) {
+			strAmPm = "오전";
+		}else {
+			strAmPm = "오후";
 		}
 		
+		int hour = now.get(Calendar.HOUR); //현재 시 리턴
+		int minute = now.get(Calendar.MINUTE); //현재 분 리턴
+		int second = now.get(Calendar.SECOND); //현재 초 리턴
 		
+		System.out.print(year + "년 ");
+		System.out.print(month + "월 ");
+		System.out.println(day + "일");
+		System.out.print(strWeek + "요일 ");
+		System.out.print(strAmPm + " ");
+		System.out.print(hour + "시 ");
+		System.out.print(minute + "분 ");
+		System.out.print(second + "초");
+		/*
+			출력결과
+			2025년 3월 13일
+			목요일 오전 9시 41분 30초
+		*/
+
 	}
 
 }
